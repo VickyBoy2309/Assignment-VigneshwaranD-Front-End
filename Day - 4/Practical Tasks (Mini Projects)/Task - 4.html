@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 4</title>
+</head>
+<body>
+  
+  <!-- Contact Form Textarea & Dropdown Box -->
+  <h2>Contact Form</h2>
+
+<form>
+
+    <!-- Name -->
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Dropdown -->
+    <label for="subject">Select Subject:</label><br>
+    <select id="subject" name="subject" required>
+        <option value="">--Choose an option--</option>
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Support Request">Support Request</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Other">Other</option>
+    </select>
+    <br><br>
+
+    <!-- Textarea -->
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40" required></textarea>
+    <br><br>
+
+    <!-- Submit -->
+    <button type="submit">Send Message</button>
+
+</form>
+
+</body>
+</html>

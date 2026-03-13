@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 4</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 30px;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      gap: 20px; /* natural spacing between items */
+    }
+
+    /* Filters group */
+    .filters select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    /* Center search box */
+    .search {
+      flex: 1;                 /* centers search by expanding space */
+      display: flex;
+      justify-content: center;
+    }
+
+    .search input {
+      width: 60%;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    /* Actions on right */
+    .actions {
+      margin-left: auto;       /* pushes actions to the right */
+      display: flex;
+      gap: 12px;
+    }
+
+    .actions button {
+      padding: 8px 14px;
+      background: #0073e6;
+      border: none;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<div class="toolbar">
+
+  <!-- Filters (Left) -->
+  <div class="filters">
+    <select>
+      <option>All Items</option>
+      <option>Active</option>
+      <option>Archived</option>
+    </select>
+  </div>
+
+  <!-- Search (Center) -->
+  <div class="search">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <!-- Actions (Right) -->
+  <div class="actions">
+    <button>Add</button>
+    <button>Export</button>
+  </div>
+
+</div>
+
+</body>
+</html>

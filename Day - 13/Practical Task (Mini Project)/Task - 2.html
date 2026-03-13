@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 2</title>
+  <style>
+    .cont{
+      display:grid;
+      gap:20px;
+      grid-template-areas:
+      'header header header'
+      'left main right'
+      'footer footer footer';
+    }
+    .header{
+      background-color:dodgerblue;
+      border-radius:20px;
+      grid-area:header;
+    }
+    .left{
+      background-color:rgb(69, 208, 110);
+      border-radius:20px;
+      grid-area:left;
+    }
+    .main{
+      background-color:yellow;
+      border-radius:20px;
+      grid-area:main;
+    }
+    .right{
+      background-color:rgb(243, 120, 12);
+      border-radius:20px;
+      grid-area:right;
+    }
+    .footer{
+      background-color:rgb(165, 8, 232);
+      border-radius:20px;
+      grid-area:footer;
+    }
+    .cont div{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:30px;
+      height:200px;
+      width:auto;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="cont">
+
+    <div class="header">This is a header</div>
+    <div class="left">This a left panel</div>
+    <div class="main">This is a main area</div>
+    <div class="right">This is a right panel</div>
+    <div class="footer">This is a footer</div>
+
+  </div>
+
+</body>
+</html>

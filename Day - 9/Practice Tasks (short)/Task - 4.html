@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 4</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container centers everything vertically and horizontally */
+    .container {
+      display: flex;
+      flex-direction: column; /* stack blocks vertically */
+      justify-content: center; /* vertical centering */
+      align-items: center;     /* horizontal centering */
+      height: 100vh;           /* full viewport height */
+      gap: 20px;               /* space between blocks */
+      background-color: #f0f0f0;
+    }
+
+    .block {
+      width: 200px;
+      height: 100px;
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <!-- Example to show Stacking three blocks vertically and center them in the viewport using flex. -->
+   
+  <div class="container">
+    <div class="block">Block 1</div>
+    <div class="block">Block 2</div>
+    <div class="block">Block 3</div>
+  </div>
+
+</body>
+</html>

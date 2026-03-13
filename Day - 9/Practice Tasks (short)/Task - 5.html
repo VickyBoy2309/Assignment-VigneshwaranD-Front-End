@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      border: 2px solid #333;
+      padding: 10px;
+    }
+
+    /* Flex item with overflowing text */
+    .flex-item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+      flex: 1;          /* allow flexible width */
+      min-width: 0;     /* key fix: lets text wrap instead of overflowing */
+      overflow: hidden; /* hides any overflow if needed */
+      text-overflow: ellipsis; /* optional: shows ... for long text */
+      white-space: nowrap;      /* optional: keep text in a single line */
+    }
+  </style>
+
+</head>
+<body>
+  
+  <!-- Example to show overflowing text block inside a flex item by applying the correct min-width -->
+   
+  <div class="container">
+    <div class="flex-item">
+      This is a very long text that would normally overflow the flex item but now it is fixed properly.
+    </div>
+    <div class="flex-item">
+      Short text
+    </div>
+  </div>
+  
+</body>
+</html>

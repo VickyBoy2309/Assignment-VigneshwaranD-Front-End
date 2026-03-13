@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 5</title>
+  <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Common styles */
+        .box {
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            border: 5px solid #333;
+            background-color: #e8f4ff;
+        }
+
+        /* content-box (Default) */
+        .content-box {
+            box-sizing: content-box; 
+            background-color: #ffdfdf;
+        }
+
+        /* border-box */
+        .border-box {
+            box-sizing: border-box;
+            background-color: #dfffdf;
+        }
+    </style>
+</head>
+<body>
+  
+     <h1>Box-Sizing Comparison</h1>
+
+    <div class="container">
+        <div class="box content-box">
+            <strong>content-box</strong><br>
+        </div>
+
+        <div class="box border-box">
+            <strong>border-box</strong><br>
+        </div>
+    </div>
+
+</body>
+</html>
