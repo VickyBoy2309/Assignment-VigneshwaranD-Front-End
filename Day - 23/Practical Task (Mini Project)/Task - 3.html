@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 3</title>
+</head>
+<body>
+
+  <h3>Live Form</h3>
+
+  <form>
+    <input type="text" id="name" placeholder="Enter name">
+    <br><br>
+    <input type="email" id="email" placeholder="Enter email">
+  </form>
+
+  <h3>Live Preview</h3>
+  <p id="namePreview"></p>
+  <p id="emailPreview"></p>
+
+  <script>
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+
+    nameInput.addEventListener("input", () => {
+      document.getElementById("namePreview").textContent =
+        "Name: " + nameInput.value;
+    });
+
+    emailInput.addEventListener("change", () => {
+      document.getElementById("emailPreview").textContent =
+        "Email: " + emailInput.value;
+    });
+  </script>
+
+</body>
+</html>

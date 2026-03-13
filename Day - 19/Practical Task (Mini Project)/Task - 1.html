@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 1</title>
+</head>
+<body>
+  
+
+  <script>
+
+//BMI Cal = wieght / height * height
+
+  let weight = Number(prompt("Enter The Weight"))/100; //Weight in KG
+  let height = parseFloat(prompt("Enter The Height:")); //Height in M
+
+let BMI = weight / ( height * height );
+
+if (BMI < 18.5 ){
+  console.log("Underweight")
+}
+else if (BMI >= 18.5 && BMI <= 24.9 ) {
+  console.log("Normal Weight")
+}
+else if (BMI >= 25 && BMI <= 29.9) {
+  console.log("Overweight")
+}
+else {
+  console.log("Invaild")
+}
+
+  </script>
+</body>
+</html>

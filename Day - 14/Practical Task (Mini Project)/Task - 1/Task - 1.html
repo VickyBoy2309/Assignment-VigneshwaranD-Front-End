@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 1</title>
+  <style>
+    /* -------- Base Hero Layout -------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  gap: 40px;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0077ff;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #005fcc;
+}
+
+.hero-image img {
+  width: 450px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* -------- Responsive (Tablets & Below) -------- */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+}
+
+/* -------- Small Mobiles (Below 480px) -------- */
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 100%; /* Full width on small mobiles */
+  }
+}
+
+  </style>
+</head>
+<body>
+  
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Build Your Future in Web Development</h1>
+    <p>Learn Full Stack Development with modern tools and industry-level practices.</p>
+    <a href="#" class="cta-btn">Get Started</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="./Web Development Image.jpg" alt="Hero Image">
+  </div>
+</section>
+
+</body>
+</html>

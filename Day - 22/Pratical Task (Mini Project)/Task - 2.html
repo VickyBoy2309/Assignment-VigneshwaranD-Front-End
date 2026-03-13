@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 2</title>
+  <style>
+    input{
+      padding : 8px;
+      border-radius : 20px;
+      border : 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <input
+  type="text"
+  placeholder="Type in"
+  id="LI"
+  oninput="UT()">
+
+  <p id="LT"></p>
+  <script>
+    function UT() {
+      const input = document.getElementById("LI").value;
+      document.getElementById("LT").textContent = input;
+    }
+  </script>
+</body>
+</html>

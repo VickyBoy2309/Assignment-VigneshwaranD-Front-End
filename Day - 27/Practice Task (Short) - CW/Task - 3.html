@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 3</title>
+</head>
+<body>
+
+  <h3>Retrieve Saved Username</h3>
+
+  <input type="text" id="username" placeholder="Enter username">
+  <button onclick="saveUserName()">Save</button>
+
+  <p id="output"></p>
+
+  <script>
+    // Retrieve data automatically on page reload
+    window.onload = function () {
+      const savedName = localStorage.getItem("username");
+      if (savedName) {
+        document.getElementById("output").textContent =
+          "Stored Username: " + savedName;
+      }
+    };
+
+    function saveUserName() {
+      const name = document.getElementById("username").value;
+      localStorage.setItem("username", name);
+      document.getElementById("output").textContent =
+        "Username saved: " + name;
+    }
+  </script>
+
+</body>
+</html>

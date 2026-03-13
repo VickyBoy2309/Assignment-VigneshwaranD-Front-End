@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 1</title>
+  <style>
+    .heading{
+      font-size: 30px;
+    }
+    .btn{
+      border:2px solid black;
+      border-radius:20px;
+    }
+    .para{
+      font-size:xx-large;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="heading">Color changing Text</h2>
+  <p class="para">Steve Rogers will return in ...</p>
+  <button class="btn">Click to reveal</button>
+
+  <script>
+    document.getElementsByClassName("btn")[0].onclick = () =>
+    document.getElementsByClassName("para")[0].innerText = "Avengers : Doomsday"
+  </script>
+</body>
+</html>

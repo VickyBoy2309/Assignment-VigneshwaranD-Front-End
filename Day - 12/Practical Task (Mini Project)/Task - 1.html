@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 1</title>
+  <style>
+    .cont{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:80px;
+      background-color:rgb(112, 109, 109);
+      height:400px;
+      width:auto;
+    }
+    .card{
+      background-color:dodgerblue;
+      border-radius:20px;
+      text-align:center;
+      padding:16px;
+      height:240px;
+      width:300px;
+    }
+    .pn{
+      text-align:center;
+      font-size:30px;
+      font-weight:bold;
+    }
+    .pp{
+      text-align:center;
+      padding-top:60px;
+      font-size:25px;
+      font-weight:bold;
+    }
+    .cta{
+      margin-top:60px;
+      background-color:#ee6c4d;
+      padding:10px;
+      border:2px solid black;
+      border-radius:16px;
+    }
+
+    @media screen and (max-width: 600px){
+      .cont{
+        display:flex-block;
+        height:auto;
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="cont">
+
+    <div class="card">
+      <div class="pn">Standard</div>
+      <div class="pp">$19/mo</div>
+      <button class="cta">Learn More</button>
+    </div>
+    
+    <div class="card">
+      <div class="pn">Pro</div>
+      <div class="pp">$99/mo</div>
+      <button class="cta">Learn More</button>
+    </div>
+    
+    <div class="card">
+      <div class="pn">Ultra</div>
+      <div class="pp">$199/mo</div>
+      <button class="cta">Learn More</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

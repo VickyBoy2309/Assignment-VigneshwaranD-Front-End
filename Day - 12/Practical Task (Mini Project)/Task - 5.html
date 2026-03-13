@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task - 5</title>
+
+<style>
+  body {
+    margin: 0;
+    background:#f1f5f9;
+    padding:20px;
+    font-family: sans-serif;
+  }
+
+  .photo-row {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 12px;
+    align-items: center; 
+  }
+
+  .photo-row img {
+    height: 140px;  
+    width: auto;            
+    object-fit: cover;      
+    border-radius: 8px;
+    background:#ccc;
+  }
+
+  @media (max-width: 480px) {
+    .photo-row img {
+      height: 100px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h2>Responsive Photo Grid Row</h2>
+
+<div class="photo-row">
+  <img src="https://picsum.photos/id/1015/400/300" alt="">
+  <img src="https://picsum.photos/id/1025/300/400" alt="">
+  <img src="https://picsum.photos/id/1035/350/350" alt="">
+  <img src="https://picsum.photos/id/1045/500/300" alt="">
+  <img src="https://picsum.photos/id/1055/350/500" alt="">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 1</title>
+</head>
+<body>
+
+  <h3>Number Validation</h3>
+
+  <input type="text" id="numInput" placeholder="Enter a number">
+  <button onclick="validateNumber()">Validate</button>
+
+  <p id="result"></p>
+
+  <script>
+    function validateNumber() {
+      const value = document.getElementById("numInput").value;
+      const result = document.getElementById("result");
+
+      try {
+        if (value === "" || isNaN(value)) {
+          throw "Invalid number input";
+        }
+        result.textContent = "Valid number: " + value;
+        result.style.color = "green";
+      } catch (error) {
+        result.textContent = error;
+        result.style.color = "red";
+      }
+    }
+  </script>
+
+</body>
+</html>

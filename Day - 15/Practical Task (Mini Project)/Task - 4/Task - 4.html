@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 4</title>
+  <style>
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 30px 10%;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+  .photo-gallery {
+    padding: 20px 5%;
+    gap: 10px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  
+  <section class="photo-gallery">
+  <div class="photo"><img src="./GTA 6.jpg" alt="GTA 6"></div>
+  <div class="photo"><img src="./GTA 6 Char.jpg" alt="GTA 6 Char"></div>
+  <div class="photo"><img src="./Avengers Endgame.jpg" alt="Avengers Endgame"></div>
+  <div class="photo"><img src="./High In The Sikes Minecraft.png" alt="Minecraft"></div>
+  <div class="photo"><img src="./Berserk.jpg" alt="Berserk"></div>
+  <div class="photo"><img src="./TASM.jpg" alt="TASM"></div>
+</section>
+
+</body>
+</html>

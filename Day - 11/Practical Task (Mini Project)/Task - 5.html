@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 5</title>
+  <style>
+    .cont{
+      background-color:aliceblue;
+      border:2px solid black;
+      padding:10px;
+      display:grid;
+      gap:10px;
+      margin:2px;
+      grid-template-areas:
+      'header header header'
+      'right main main'
+      'footer footer footer';
+    }
+    .cont div {
+      background-color:rgb(230, 199, 158);
+      text-align:center;
+      padding:10px;
+      height:100px;
+      width:auto;
+      justify-content:center;
+    }
+    .header{
+      grid-area:header;
+    }
+    .siderbar{
+      grid-area:right;
+    }
+    .content{
+      grid-area:main;
+    }
+    .footer{
+      grid-area:footer;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="cont">
+    <div class="header">Header</div>
+    <div class="sidebar">Right</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>

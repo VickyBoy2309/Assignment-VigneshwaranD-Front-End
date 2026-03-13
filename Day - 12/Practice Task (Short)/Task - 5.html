@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 5</title>
+
+  <style>
+    .container {
+      display: flex;
+      width: 300px;
+      border: 2px solid #000;
+    }
+
+    .flex-item {
+      flex: 1;
+      min-width: 0; /* IMPORTANT FIX */
+      background: #eee;
+      padding: 10px;
+    }
+
+    .flex-item p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="flex-item">
+      <p>This is a very very long text that normally overflows in a flex item.</p>
+    </div>
+  </div>
+
+</body>
+</html>

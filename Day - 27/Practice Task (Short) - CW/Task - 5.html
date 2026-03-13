@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 5</title>
+</head>
+<body>
+
+  <h3>Get Current Location</h3>
+  <button onclick="getLocation()">Show Latitude & Longitude</button>
+
+  <p id="output"></p>
+
+  <script>
+    function getLocation() {
+      const output = document.getElementById("output");
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
+            output.textContent =
+              "Latitude: " + latitude + " | Longitude: " + longitude;
+          },
+          () => {
+            output.textContent = "Location access denied!";
+          }
+        );
+      } else {
+        output.textContent = "Geolocation is not supported by this browser.";
+      }
+    }
+  </script>
+
+</body>
+</html>

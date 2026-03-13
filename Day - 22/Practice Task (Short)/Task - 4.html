@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 4</title>
+</head>
+<body>
+
+  <h2>Dynamic Listing</h2>
+  <h3>List of Avengers Movies</h3>
+
+  <ol id="olist"></ol>
+  <button id="btn">Add</button>
+
+   <button id="removeBtn">Remove</button>
+
+  <script>
+    const addlist = document.getElementById("olist");
+    const btn = document.getElementById("btn");
+
+    const movies = [
+      "Avengers",
+      "Avengers : Age Of Ultron",
+      "Avengers : Infinity War",
+      "Avengers : Endgame",
+      "Avengers : Doomsday",
+      "Avengers : Secret War"
+    ];
+
+    let index = 0;
+
+    btn.onclick = () => {
+      if (index < movies.length) {
+        const li = document.createElement("li");
+        li.textContent = movies[index];
+        addlist.appendChild(li);
+        index++;
+      } else {
+        btn.innerText = "All Movies Added";
+      }
+    };
+      const list = document.getElementById("olist");
+    const removeBtn = document.getElementById("removeBtn");
+
+    removeBtn.onclick = () => {
+      if (list.firstElementChild) {
+        list.removeChild(list.firstElementChild);
+      } else {
+        removeBtn.innerText = "All Removed";
+      }
+    };
+  </script>
+
+</body>
+</html>

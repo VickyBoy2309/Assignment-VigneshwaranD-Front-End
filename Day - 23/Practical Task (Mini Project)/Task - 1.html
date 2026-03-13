@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 1</title>
+</head>
+<body>
+
+  <div id="box" style="width:200px; height:200px; background-color:lightgray; display:flex; align-items:center; justify-content:center;">
+    Interact with me
+  </div>
+
+  <script>
+    const box = document.getElementById("box");
+
+    box.addEventListener("click", () => {
+      box.style.backgroundColor = "lightgreen";
+    });
+
+    box.addEventListener("dblclick", () => {
+      box.style.backgroundColor = "orange";
+    });
+
+    box.addEventListener("mouseover", () => {
+      box.style.backgroundColor = "skyblue";
+    });
+  </script>
+
+</body>
+</html>

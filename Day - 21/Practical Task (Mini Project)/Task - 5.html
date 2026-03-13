@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    ul {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Product Names</h2>
+  <ul id="productList"></ul>
+
+  <script>
+    // Array of products
+    const products = [
+      { name: "Laptop", price: 60000 },
+      { name: "Mobile", price: 30000 },
+      { name: "Headphones", price: 2000 },
+      { name: "Keyboard", price: 1500 }
+    ];
+
+    const list = document.getElementById("productList");
+
+    // Display product names using forEach
+    products.forEach(product => {
+      const li = document.createElement("li");
+      li.textContent = product.name;
+      list.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>

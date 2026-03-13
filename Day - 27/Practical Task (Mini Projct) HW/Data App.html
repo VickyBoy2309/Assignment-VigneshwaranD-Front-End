@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data App</title>
+</head>
+<body>
+
+  <h3>Simple Data App</h3>
+
+  <button onclick="fetchUsers()">Fetch Users</button>
+  <p id="loading"></p>
+
+  <ul id="userList"></ul>
+
+  <p id="savedData"></p>
+
+  <script>
+    const loadingText = document.getElementById("loading");
+    const userList = document.getElementById("userList");
+    const savedData = document.getElementById("savedData");
+
+    // Show saved value on page load
+    window.onload = function () {
+      const storedUser = localStorage.getItem("savedUser");
+      if (storedUser) {
+        const parsedUser = JSON.parse(storedUser);
+        savedData.textContent = "Saved User Email: " + parsedUser.email;
+      }
+    };
+
+    function fetchUsers() {
+      loadingText.textContent = "Loading data...";
+      userList.innerHTML = "";
+
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then(response => response.json())
+        .then(data => {
+          loadingText.textContent = "";
+
+          data.forEach((user, index) => {
+            const li = document.createElement("li");
+            li.textContent = user.name + " - " + user.email;
+            userList.appendChild(li);
+
+            // Save first user's email in localStorage
+            if (index === 0) {
+              localStorage.setItem(
+                "savedUser",
+                JSON.stringify({ email: user.email })
+              );
+            }
+          });
+        })
+        .catch(error => {
+          loadingText.textContent = "Error fetching data!";
+          console.error(error);
+        });
+    }
+  </script>
+
+</body>
+</html>

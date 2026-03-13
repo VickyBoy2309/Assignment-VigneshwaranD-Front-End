@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 4</title>
+  <style>
+    /* Footer base */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* Column headings */
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Links */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 8px 0;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  
+  <footer class="footer">
+  <div class="footer-col">
+    <h4>Company</h4>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col">
+    <h4>Services</h4>
+    <ul>
+      <li><a href="#">Web Development</a></li>
+      <li><a href="#">UI/UX Design</a></li>
+      <li><a href="#">SEO</a></li>
+      <li><a href="#">Marketing</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col">
+    <h4>Resources</h4>
+    <ul>
+      <li><a href="#">Documentation</a></li>
+      <li><a href="#">Guides</a></li>
+      <li><a href="#">API</a></li>
+      <li><a href="#">Community</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col">
+    <h4>Support</h4>
+    <ul>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

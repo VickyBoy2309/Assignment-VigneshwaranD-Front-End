@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 5</title>
+</head>
+<body>
+
+  <h3>Click the inner box and check the console</h3>
+
+  <div id="parent" style="padding:40px; background-color:lightcoral;">
+    Parent
+    <div id="child" style="margin-top:20px; padding:40px; background-color:lightblue;">
+      Child
+    </div>
+  </div>
+
+  <script>
+    const parent = document.getElementById("parent");
+    const child = document.getElementById("child");
+
+    // Bubbling (default)
+    parent.addEventListener("click", () => {
+      console.log("Parent clicked (Bubbling)");
+    });
+
+    child.addEventListener("click", () => {
+      console.log("Child clicked (Bubbling)");
+    });
+
+    // Capturing
+    parent.addEventListener("click", () => {
+      console.log("Parent clicked (Capturing)");
+    }, true);
+
+    child.addEventListener("click", () => {
+      console.log("Child clicked (Capturing)");
+    }, true);
+  </script>
+
+</body>
+</html>

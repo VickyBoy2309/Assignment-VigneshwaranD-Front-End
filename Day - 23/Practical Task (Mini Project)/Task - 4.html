@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 4</title>
+</head>
+<body>
+
+  <h3>Form Validation</h3>
+
+  <form id="myForm">
+    <input type="text" id="username" placeholder="Username">
+    <br><br>
+    <input type="password" id="password" placeholder="Password">
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="error" style="color:red;"></p>
+
+  <script>
+    const form = document.getElementById("myForm");
+    const error = document.getElementById("error");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (username === "" || password === "") {
+        error.textContent = "All fields are required!";
+      } else {
+        error.textContent = "Form submitted successfully!";
+        error.style.color = "green";
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 2</title>
+</head>
+<body>
+
+  <h3>Custom Error Handling</h3>
+
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Enter name">
+    <br><br>
+    <input type="email" id="email" placeholder="Enter email">
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message" style="color:red;"></p>
+
+  <script>
+    const form = document.getElementById("myForm");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      try {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+
+        if (name === "" || email === "") {
+          throw "All fields must be filled!";
+        }
+
+        message.textContent = "Form submitted successfully!";
+        message.style.color = "green";
+      } catch (error) {
+        message.textContent = error;
+        message.style.color = "red";
+      }
+    });
+  </script>
+
+</body>
+</html>

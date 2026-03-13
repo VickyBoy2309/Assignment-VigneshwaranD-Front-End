@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 2</title>
+  <style>
+    /* Container styling */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 60px 10%;
+}
+
+/* Individual service box */
+.service {
+  padding: 25px;
+  background: #f5f5f5;
+  border-radius: 14px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings & text */
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Tablet responsive (2 columns) */
+@media (max-width: 900px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile responsive (1 column) */
+@media (max-width: 600px) {
+  .services {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  
+  <section class="services">
+  <div class="service">
+    <h3>Web Development</h3>
+    <p>Build fast, scalable, and responsive websites using modern technologies.</p>
+  </div>
+
+  <div class="service">
+    <h3>UI/UX Design</h3>
+    <p>Create clean, user-friendly interfaces with professional design systems.</p>
+  </div>
+
+  <div class="service">
+    <h3>Digital Marketing</h3>
+    <p>Grow your presence with data-driven SEO, ads, and social strategies.</p>
+  </div>
+</section>
+
+</body>
+</html>

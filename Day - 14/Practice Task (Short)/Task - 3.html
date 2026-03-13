@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 3</title>
+  <style>
+    .cont{
+      background-color:blanchedalmond;
+      border-radius:20px;
+      padding:20px;
+      display:grid;
+      gap:20px;
+      grid-template-columns:1fr 1fr;
+      
+    }
+    .col{
+      background-color:teal;
+      border-radius:20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:30px;
+      height:100px;
+      width:auto;
+    }
+    @media screen and (max-width:600px){
+      .cont{
+        background-color:blanchedalmond;
+        border-radius:20px;
+        padding:20px;
+        display:grid;
+        gap:20px;
+        grid-template-columns:1fr;
+    }
+  }
+  </style>
+</head>
+<body>
+  
+  <div class="cont">
+    <div class="col">Column 1</div>
+    <div class="col">Column 2</div>
+    <div class="col">Column 3</div>
+    <div class="col">Column 4</div>
+  </div>
+
+</body>
+</html>

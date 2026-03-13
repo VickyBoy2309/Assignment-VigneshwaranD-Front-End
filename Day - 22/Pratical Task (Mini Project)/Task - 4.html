@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 4</title>
+</head>
+<body>
+
+  <button class="colorBtn">Button 1</button>
+  <button class="colorBtn">Button 2</button>
+  <button class="colorBtn">Button 3</button>
+
+  <script>
+    const buttons = document.querySelectorAll(".colorBtn");
+    const colors = ["red", "green", "blue", "orange", "purple"];
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        btn.style.backgroundColor = randomColor;
+        btn.style.color = "white";
+      });
+    });
+  </script>
+
+</body>
+</html>

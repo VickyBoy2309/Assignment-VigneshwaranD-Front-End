@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 5</title>
+</head>
+<body>
+
+  <h3>Debug Logical Errors</h3>
+
+  <input type="text" id="num" placeholder="Enter a number">
+  <button onclick="checkEven()">Check Even/Odd</button>
+
+  <p id="output"></p>
+
+  <script>
+    function checkEven() {
+      const num = document.getElementById("num").value;
+      const output = document.getElementById("output");
+
+      // ❌ Logical Error (string comparison instead of number)
+      // if (num % 2 == 1) { ... }
+
+      // ✅ Fixed Logical Error
+      if (num === "" || isNaN(num)) {
+        output.textContent = "Please enter a valid number";
+        output.style.color = "red";
+        return;
+      }
+
+      const number = Number(num);
+
+      if (number % 2 === 0) {
+        output.textContent = "The number is Even";
+        output.style.color = "green";
+      } else {
+        output.textContent = "The number is Odd";
+        output.style.color = "blue";
+      }
+    }
+  </script>
+
+</body>
+</html>

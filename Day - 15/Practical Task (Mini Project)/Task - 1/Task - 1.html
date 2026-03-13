@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task - 1</title>
+  <style>
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 10%;
+  gap: 50px;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #0077ff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #005fcc;
+}
+
+.hero-image img {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 14px;
+}
+
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 8%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    padding: 14px 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+  
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Build Your Dream Website</h1>
+    <p>Professional web development with modern tools, fast performance, and responsive design.</p>
+    <a href="#" class="hero-btn">Get Started</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="./Web Development Image.jpg" alt="Hero Image">
+  </div>
+</section>
+
+</body>
+</html>

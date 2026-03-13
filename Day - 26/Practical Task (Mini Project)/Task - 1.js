@@ -1,0 +1,16 @@
+// Counter using Closure
+
+function createCounter() {
+  let count = 0; // private variable (closure)
+
+  return function () {
+    count++;
+    return count;
+  };
+}
+
+const counter = createCounter();
+
+console.log(counter()); // 1
+console.log(counter()); // 2
+console.log(counter()); // 3

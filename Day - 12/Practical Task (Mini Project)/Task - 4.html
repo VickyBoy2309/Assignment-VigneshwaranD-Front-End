@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task - 4</title>
+
+<style>
+  body {
+    margin: 0;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .filters {
+    display: flex;
+    gap: 10px;
+  }
+  .filters select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+  }
+
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  .search input {
+    width: 250px;
+    max-width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  .actions button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: #3b82f6;
+    color: #fff;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="toolbar">
+
+  <div class="filters">
+    <select>
+      <option>Status</option>
+      <option>Active</option>
+      <option>Pending</option>
+      <option>Completed</option>
+    </select>
+
+    <select>
+      <option>Category</option>
+      <option>Design</option>
+      <option>Development</option>
+      <option>Marketing</option>
+    </select>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <div class="actions">
+    <button>Add</button>
+    <button>Export</button>
+  </div>
+
+</div>
+
+</body>
+</html>
